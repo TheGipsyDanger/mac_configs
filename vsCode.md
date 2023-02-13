@@ -16,6 +16,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.selectionHighlight": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestSelection": "first",
@@ -39,11 +42,11 @@
   "elixirLS.suggestSpecs": false,
   "explorer.confirmDelete": false,
   "editor.accessibilitySupport": "on",
-  "editor.fontFamily": "JetbrainsMono-Regular",
+  "editor.fontFamily": "JetbrainsMono-Light",
   "terminal.integrated.fontFamily": "FiraCode-Retina, PowerlineSymbols",
   "githubPullRequests.fileListLayout": "tree",
   "elixirLinter.useStrict": true,
-  "workbench.colorTheme": "lucy",
+  "workbench.colorTheme": "oh-lucy-evening",
   "bracketPairColorizer.depreciation-notice": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -159,17 +162,28 @@
   "liveshare.accessibility.soundVolume": 0,
   "terminal.integrated.showExitAlert": false,
   "audioCues.enabled": "off",
-  "workspaceExplorer.workspaceStorageDirectory": "/Users/king/Documents/Projects/work/_vscode",
-  "liveshare.accessibility.soundsEnabled": false,
+  "workspaceExplorer.workspaceStorageDirectory": "/Users/thegipsydanger/Documents/Projects/work/_vscode",
   "audioCues.lineHasBreakpoint": "off",
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
   "audioCues.lineHasInlineSuggestion": "off",
   "audioCues.noInlayHints": "off",
   "audioCues.onDebugBreak": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontWeight": "normal",
+  "editor.formatOnPaste": true,
+  "liveServer.settings.donotShowInfoMsg": true,
   "editor.formatOnSave": true,
-  "window.zoomLevel": -1
+  "audioCues.diffLineInserted": "off",
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalQuickFix": "off",
+  "window.zoomLevel": -2
 }
+
 
 ```
 
