@@ -2,24 +2,12 @@
 
 ```
 [user]
-	name = Renan Henrique
+	name = Renan O Henrique
 	email = henriquebasshvf@gmail.com
+
 [core]
-	excludesfile = /Users/king/.gitignore_global
-	editor = /usr/bin/vim
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/king/.stCommitMsg
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+	editor = code --wait
+
 [alias]
 	g = git
   co = checkout
@@ -39,5 +27,8 @@
 	pf = "!f() { git push origin \"$(git rev-parse --abbrev-ref HEAD)\" -f; }; f"
 	ub =  "!f() { git pull origin \"$*\" --rebase; }; f"
 	rb = "!f() { git checkout master && git pull origin master --rebase && git rebase origin \"$(git rev-parse --abbrev-ref HEAD)\"; }; f"
-  lg = log  --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=50
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1" --max-count=50
+  # lg = log  --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=50
 ```
